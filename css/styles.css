@@ -678,9 +678,9 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cu
     color: var(--NAVY-BLUE, #2E2F42);
 }
 
-/* .input-icon-wrapper {
-    margin-bottom: 8px;
-} */
+.review-form-wrapper{
+    margin-bottom: 8px; 
+}
 
 .review-form-input{
     margin-bottom: 8px; 
@@ -748,6 +748,7 @@ transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     padding: 8px 16px;
     resize: none;
     color: rgba(46, 47, 66, 0.4);
+    margin-bottom: 16px;
 
 outline: transparent;
 font-size: 12px;
