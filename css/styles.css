@@ -639,23 +639,20 @@ transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 .modal-close-button{
 width: 24px;
 height: 24px;
-
 padding: 0; 
-
 background-color: var(--CORNFLOWER, #E7E9FC);
 stroke-width: 1px;
 fill: var(--NAVY-BLUE, #2E2F42);
 border-radius: 50%;
 border: 1px solid rgba(0, 0, 0, 0.1);
-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1); 
-
 display: flex;
 align-items: center;
 justify-content: center;
-
 position: absolute;
 top: 24px;
 right: 24px;
+transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 }
 
 .modal-close-button:hover,
@@ -678,7 +675,7 @@ right: 24px;
 }
 
 .review-form-wrapper{
-margin-bottom: 16px
+margin-bottom: 8px; 
 }
 
 .review-form-fields{
@@ -707,7 +704,7 @@ margin-bottom: 4px;
 
 .review-form-input{
 border-radius: 4px;
-border: 1px solid var(--NAVY-BLUE-modal, rgba(46, 47, 66, 0.40));
+border-color: 1px solid var(--NAVY-BLUE-modal, rgba(46, 47, 66, 0.40));
 
 width: 100%;
 height: 40px;
@@ -720,8 +717,8 @@ font-size: 12px;
 font-style: normal;
 line-height: 1.17; 
 letter-spacing: 0.48px;
-transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 }
 
 .review-form-input:focus{
@@ -795,7 +792,7 @@ border-color: var(--IRIS, #4D5AE5);
 color: var(--LIGHT-SLATE, #8E8F99);
 font-size: 12px;
 font-style: normal;
-line-height: 1.12;
+line-height: 1.17;
 letter-spacing: 0.48px;
 }
 
