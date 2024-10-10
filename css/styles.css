@@ -416,6 +416,7 @@ overflow: hidden;
     background: var(--IRIS, #4D5AE5);
     transform: translateY(100%);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
 color: var(--CLOUD, #F4F4FD);
 font-style: normal;
 font-weight: 400;
@@ -427,7 +428,7 @@ height: 100%;
 width: 100%;
 }
 
-.image-container:hover .overlay{
+.our-portfolio-item:hover .overlay{
     transform: translateY(0%);
 }
 
@@ -513,3 +514,308 @@ width: 24px;
 height: 24px;
 fill: var(--CLOUD, #F4F4FD);
 }
+
+.subscribe-side{
+margin-left: 80px;
+}
+
+.footer-subscribe{
+width: 453px;
+height: 80px;
+}
+
+.subscribe-paragraph{
+color: var(--WHITE, #FFF);
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: 1.5; 
+letter-spacing: 0.32px;
+margin-bottom: 16px;
+}
+
+.footer-subscribe{
+display: flex;
+}
+
+.subscribe-email{
+width: 264px;
+height: 40px;
+border-radius: 4px;
+border: 1px solid var(--WHITE, #FFF);
+box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+background-color: transparent;
+padding: 8px 16px;
+margin-right: 24px;
+
+color: #FFFFFF;
+font-size: 12px;
+font-style: normal;
+font-weight: 400;
+line-height: 2;
+letter-spacing: 0.48px;
+}
+
+.subscribe-email::placeholder{
+color: #FFFFFF;
+}
+
+.subscribe-button{
+width: 165px;
+height: 40px;
+border-radius: 4px;
+background-color: var(--IRIS, #4D5AE5);
+border: none;
+
+color: var(--WHITE, #FFF);
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: 1.5; 
+letter-spacing: 0.64px;
+text-align: center;
+transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+
+    display: flex;
+    padding: 8px 24px;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+
+.subscribe-button:hover,
+.subscribe-button:focus{
+    background-color: var(--OCEAN, #404BBF);
+}
+
+/* ============ Modal Window ================ */
+.modal-backdrop{
+position: fixed;
+z-index: 99999999;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background-color: var(--NAVY-BLUE-modal, rgba(46, 47, 66, 0.40));
+display: flex;
+justify-content: center;
+align-items: center;
+
+opacity: 0;
+pointer-events: none;
+transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-backdrop.is-open{
+opacity: 1;
+pointer-events: auto;  
+}
+
+.modal{
+width: 408px;
+height: 80%;
+max-height: 584px;
+background-color: var(--DAIRY, #FCFCFC);
+overflow: auto;
+padding-top: 72px;
+padding-left: 24px;
+padding-bottom: 24px;
+padding-right: 24px;
+border-radius: 4px;
+box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14);
+
+position: relative;
+}
+
+.modal-close-button{
+width: 24px;
+height: 24px;
+background-color: var(--CORNFLOWER, #E7E9FC);
+stroke-width: 1px;
+fill: var(--NAVY-BLUE, #2E2F42);;
+border-radius: 50%;
+border: 1px solid rgba(0, 0, 0, 0.1);
+transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+
+display: flex;
+align-items: center;
+justify-content: center;
+
+position: absolute;
+top: 24px;
+right: 24px;
+}
+
+.modal-close-button:hover,
+.modal-close-button:focus{
+ background-color: var(--OCEAN, #404BBF);
+ fill: var(--WHITE, #FFF);
+}
+
+.modal-slogan{
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.5; 
+    letter-spacing: 0.32px;  
+    max-width: 360px;
+    margin-bottom: 16px;
+}
+
+.review-form-wrapper{
+margin-bottom: 8px;
+}
+
+.review-form-fields{
+color: var(--LIGHT-SLATE, #8E8F99);
+font-size: 12px;
+font-style: normal;
+line-height: 1.17;
+letter-spacing: 0.48px;
+
+display: block;
+margin-bottom: 4px;
+}
+
+.input-icon-wrapper{
+    position: relative;
+}
+
+.review-icon{
+    position: absolute;
+    top: 50%;
+    left: 16px;
+    transform: translateY(-50%);
+    fill: #2E2F42; 
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+}
+
+.review-form-input{
+border-radius: 4px;
+border: 1px solid var(--NAVY-BLUE-modal, rgba(46, 47, 66, 0.40));
+
+width: 100%;
+height: 40px;
+background-color: transparent;
+padding-left: 38px;
+
+color: #2E2F42;
+font-size: 12px;
+font-style: normal;
+line-height: 1.17; 
+letter-spacing: 0.48px;
+transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.review-form-input:focus{
+    border: 1px solid var(--IRIS, #4D5AE5);
+    outline: none;   
+}
+
+.review-form-input:focus + .review-icon{
+    fill: var(--IRIS, #4D5AE5);
+}
+
+.review-form-comments{
+    width: 100%;
+    height: 120px;
+    border-radius: 4px;
+    border: 1px solid var(--NAVY-BLUE-modal, rgba(46, 47, 66, 0.40));
+    background-color: transparent;
+    padding: 8px 16px;
+    resize: none;
+
+color: #2E2F42;
+font-size: 12px;
+font-style: normal;
+line-height: 1.17; 
+letter-spacing: 0.48px;
+transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.review-form-comments::placeholder{
+    color: var(--NAVY-BLUE-modal, rgba(46, 47, 66, 0.40));
+}
+
+.review-form-checkbox-wrapper{
+    margin-bottom: 24px;
+}
+
+.review-form-comments:focus{
+    outline: none;
+    border-color: var(--IRIS, #4D5AE5);
+}
+
+.custom-checkbox{
+display: block;
+width: 20px;
+height: 20px;
+border-radius: 4px;
+border: 1px solid rgba(46, 47, 66, 0.4);
+cursor: pointer;
+
+display: inline-flex;
+justify-content: center;
+align-items: center;
+fill: transparent;
+margin-right: 8px;
+}
+
+.review-form-checkbox:checked + .review-form-checkbox-label > .custom-checkbox {
+background-color: var(--IRIS, #4D5AE5);
+border-color: var(--IRIS, #4D5AE5);
+fill: var(--CLOUD, #F4F4FD);
+}
+ 
+.review-form-checkbox:focus + .review-form-checkbox-label > .custom-checkbox {
+border-color: var(--IRIS, #4D5AE5);
+}
+
+.review-form-checkbox-label{
+color: var(--LIGHT-SLATE, #8E8F99);
+font-size: 12px;
+font-style: normal;
+line-height: 1.12;
+letter-spacing: 0.48px;
+}
+
+.review-form-policy-link{
+text-decoration: underline;
+color: var(--IRIS, #4D5AE5);
+}
+
+.review-form-submit-button{
+min-width: 169px; 
+display: block;
+margin: 0 auto;
+border-radius: 4px;
+background-color: var(--IRIS, #4D5AE5);
+box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+border: none;
+padding: 16px 32px;
+transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+color: var(--WHITE, #FFF);
+text-align: center;
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: 1.5; 
+letter-spacing: 0.64px;
+
+
+}
+
+.review-form-submit-button:hover,
+.review-form-submit-button:focus{
+    background-color: var(--OCEAN, #404BBF);
+}
+
+
+
+
