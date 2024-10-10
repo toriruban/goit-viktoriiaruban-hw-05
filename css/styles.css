@@ -662,8 +662,8 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cu
  border: none;
 }
 
-modal-close-icon{
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+.modal-close-icon {
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-slogan{
@@ -678,8 +678,11 @@ modal-close-icon{
     color: var(--NAVY-BLUE, #2E2F42);
 }
 
-.review-form-wrapper{
-margin-bottom: 16px 
+.review-form-wrapper {
+    margin-bottom: 16px; 
+}
+.review-form-checkbox-wrapper {
+    margin-bottom: 24px;
 }
 
 .review-form-fields{
