@@ -519,11 +519,6 @@ fill: var(--CLOUD, #F4F4FD);
 margin-left: 80px;
 }
 
-.footer-subscribe{
-width: 453px;
-height: 80px;
-}
-
 .subscribe-paragraph{
 color: var(--WHITE, #FFF);
 font-size: 16px;
@@ -536,7 +531,6 @@ margin-bottom: 16px;
 
 .footer-subscribe{
 display: flex;
-gap: 24px;
 }
 
 .subscribe-email{
